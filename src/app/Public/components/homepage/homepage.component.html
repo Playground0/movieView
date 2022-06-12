@@ -1,0 +1,131 @@
+<section id="homeBody">
+  <mat-grid-list class="features" cols="3" rowHeight="400px">
+    <mat-grid-tile class="topSection" [colspan]="2" [rowspan]="1">
+      <mat-card class="trending-card">
+        <mat-card-title-group>
+          <img id="card-image" mat-card-xl-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+        </mat-card-title-group>
+        <mat-card-content>
+          <div class="card-content">
+            <mat-card-title id="card-title">Shiba Inu</mat-card-title>
+            <mat-card-subtitle id="card-title">Extra large</mat-card-subtitle>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Explicabo, culpa magni, consequatur eius vero quae inventore, ad exercitationem laboriosam molestiae iure
+            aperiam aut praesentium id.
+            Eligendi quo pariatur incidunt minus.
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile class="topSection" [colspan]="1" [rowspan]="1">
+      <mat-card>
+        <mat-card-content>
+          <div>
+            <button mat-raised-button><mat-icon> cloud </mat-icon>
+                Basic
+            </button>
+        </div>
+          <div>
+            <button mat-raised-button color="primary"> <mat-icon> folder </mat-icon>
+            Primary
+            </button>
+          </div>
+          <div>
+            <button mat-raised-button color="accent"><mat-icon> desktop_mac </mat-icon>
+            Accent</button>
+          </div>
+          <div>
+            <button mat-raised-button color="warn"><mat-icon> atm </mat-icon>
+                Warn</button>
+          </div>
+          <div>
+            <button mat-raised-button disabled><mat-icon> directions_run </mat-icon>
+                Disabled</button>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <mat-grid-list class="features" cols="4" rowHeight="500px">
+    <mat-grid-tile class="bottomSection" [colspan]="1" [rowspan]="2">
+      <mat-card class="example-card">
+
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+            bred for hunting.
+          </p>
+        </mat-card-content>
+        <mat-card-header>
+          <mat-card-title>Shiba Inu</mat-card-title>
+          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile class="bottomSection" [colspan]="2" [rowspan]="1">
+      <mat-card class="trending-card">
+        <mat-card-title-group>
+          <mat-card-title>
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Search for movies</mat-label>
+              <input matInput placeholder="">
+            </mat-form-field>
+            <button mat-fab color="primary" aria-label="Example icon button with a bookmark icon">
+              <mat-icon>search</mat-icon>
+            </button>
+          </mat-card-title>
+          <mat-card-subtitle>
+            <mat-chip-list aria-label="Fish selection">
+              <mat-chip>One fish</mat-chip>
+              <mat-chip>Two fish</mat-chip>
+              <mat-chip color="primary" selected>Primary fish</mat-chip>
+              <mat-chip color="accent" selected>Accent fish</mat-chip>
+            </mat-chip-list>
+          </mat-card-subtitle>
+        </mat-card-title-group>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile class="bottomSection" [colspan]="1" [rowspan]="1">
+        <mat-card class="trending-card">
+            <mat-card-title-group>
+              <img id="card-image" mat-card-xl-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+            </mat-card-title-group>
+            <mat-card-content>
+              <div class="card-content">
+                <mat-card-title id="card-title">Shiba Inu</mat-card-title>
+                <mat-card-subtitle id="card-title">Extra large</mat-card-subtitle>
+              </div>
+            </mat-card-content>
+          </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile class="bottomSection " [colspan]="2" [rowspan]="1">
+      <mat-card class="trending-card">
+        <mat-card-title-group>
+          <img id="card-image" mat-card-xl-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+        </mat-card-title-group>
+        <mat-card-content>
+          <div>
+            <mat-card-title id="card-title">Shiba Inu</mat-card-title>
+            <mat-card-subtitle id="card-title">Extra large</mat-card-subtitle>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button>
+            View Profile
+          </button>
+          <button mat-raised-button color="primary">
+            Logout
+          </button>
+        </mat-card-actions>
+
+
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile class="bottomSection" [colspan]="1" [rowspan]="1">
+      Tags and Nav
+    </mat-grid-tile>
+  </mat-grid-list>
+</section>

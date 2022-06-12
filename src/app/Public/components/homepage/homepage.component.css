@@ -1,0 +1,46 @@
+#homeBody
+{
+    padding: 5% 5%;
+    border: 1px solid black;
+    max-width: 100%;
+    max-height: auto;
+}
+.features
+{
+    /* margin-top: 5%; */
+    /* padding: 5%; */
+    max-width: 100%;
+}
+
+.topSection
+{
+    /* border: 1px solid red; */
+   
+}
+
+.bottomSection
+{
+
+    /* border: 1px solid blue; */
+}
+.trending-card {
+    max-width: 80%;
+    margin-bottom: 0;
+    display: flex;
+}
+.card-image{
+    width: 200px;
+}
+
+
+.card-content
+{
+    border: 1px solid black;
+    padding: 5%;
+}
+.example-full-width {
+    width: 76%;
+}
+button{}
+
+  

@@ -7,20 +7,22 @@
 }
 .features
 {
-    /* margin-top: 5%; */
+    /* margin-top: 0;  */
     /* padding: 5%; */
     max-width: 100%;
 }
 
 .topSection
 {
+    padding: 1%;
     /* border: 1px solid red; */
    
 }
 
 .bottomSection
 {
-
+    margin-bottom: 0;
+    
     /* border: 1px solid blue; */
 }
 .trending-card {
@@ -28,19 +30,20 @@
     margin-bottom: 0;
     display: flex;
 }
-.card-image{
+/* .card-image{
     width: 200px;
+} */
+.example-card{
+    border-radius: 10px;
 }
-
 
 .card-content
 {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 5%;
 }
 .example-full-width {
-    width: 76%;
+    width: 80%;
 }
-button{}
 
   

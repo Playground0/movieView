@@ -14,3 +14,7 @@ body {
 img {
   border-radius: 15px;
 }
+button
+{
+  width: 100%;
+}

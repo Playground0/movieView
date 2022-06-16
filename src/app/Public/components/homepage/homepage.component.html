@@ -1,56 +1,58 @@
 <section id="homeBody">
-  <mat-grid-list class="features" cols="3" rowHeight="400px">
-    <mat-grid-tile class="topSection" [colspan]="2" [rowspan]="1">
+  <mat-grid-list cols="3" rowHeight="300px" class="topSection" >
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
       <mat-card class="trending-card example-card">
         <mat-card-title-group>
           <img id="card-image" mat-card-xl-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
         </mat-card-title-group>
         <mat-card-content>
           <div class="card-content">
-            <mat-card-title id="card-title">Shiba Inu</mat-card-title>
-            <mat-card-subtitle id="card-title">Extra large</mat-card-subtitle>
+            <mat-card-title>Green plants are going to extinct about 500 times faster than they should, Study finds</mat-card-title>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Explicabo, culpa magni, consequatur eius vero quae inventore, ad exercitationem laboriosam molestiae iure
             aperiam aut praesentium id.
             Eligendi quo pariatur incidunt minus.
+            <mat-card-subtitle>
+              <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+              <p>Alexander Pakinson</p>
+            </mat-card-subtitle>
           </div>
         </mat-card-content>
       </mat-card>
     </mat-grid-tile>
-    <mat-grid-tile class="topSection" [colspan]="1" [rowspan]="1">
-      <mat-card class="example-card">
-        <mat-card-content>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <mat-card class="categoryCard example-card">
+        <mat-card-content class="content">
           <div>
             <button mat-raised-button><mat-icon> cloud </mat-icon>
-                Basic
+                Global
             </button>
         </div>
           <div>
             <button mat-raised-button color="primary"> <mat-icon> folder </mat-icon>
-            Primary
+            Business
             </button>
           </div>
           <div>
             <button mat-raised-button color="accent"><mat-icon> desktop_mac </mat-icon>
-            Accent</button>
+            Entertainment</button>
           </div>
           <div>
             <button mat-raised-button color="warn"><mat-icon> atm </mat-icon>
-                Warn</button>
+                Sports</button>
           </div>
           <div>
             <button mat-raised-button disabled><mat-icon> directions_run </mat-icon>
-                Disabled</button>
+                Helath</button>
           </div>
         </mat-card-content>
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
 
-  <mat-grid-list class="features" cols="4" rowHeight="500px">
-    <mat-grid-tile class="bottomSection" [colspan]="1" [rowspan]="2">
+  <mat-grid-list cols="4" rowHeight="300px"  class="bottomSection">
+    <mat-grid-tile [colspan]="1" [rowspan]="2">
       <mat-card class="example-card">
-
         <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
         <mat-card-content>
           <p>
@@ -65,8 +67,8 @@
         </mat-card-header>
       </mat-card>
     </mat-grid-tile>
-    <mat-grid-tile class="bottomSection" [colspan]="2" [rowspan]="1">
-      <mat-card class="trending-card example-card">
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+      <mat-card class="example-card">
         <mat-card-title-group>
           <mat-card-title>
             <mat-form-field class="example-full-width" appearance="fill">
@@ -88,8 +90,8 @@
         </mat-card-title-group>
       </mat-card>
     </mat-grid-tile>
-    <mat-grid-tile class="bottomSection" [colspan]="1" [rowspan]="1">
-        <mat-card class="trending-card example-card">
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <mat-card class="example-card">
             <mat-card-title-group>
               <img id="card-image" mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
             </mat-card-title-group>
@@ -101,12 +103,12 @@
             </mat-card-content>
           </mat-card>
     </mat-grid-tile>
-    <mat-grid-tile class="bottomSection " [colspan]="2" [rowspan]="1">
-      <mat-card class="trending-card example-card">
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+      <mat-card class="userCard example-card">
         <mat-card-title-group>
           <img id="card-image" mat-card-md-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
         </mat-card-title-group>
-        <mat-card-content>
+        <mat-card-content class="card-content">
           <div>
             <mat-card-title id="card-title">Shiba Inu</mat-card-title>
             <mat-card-subtitle id="card-title">Extra large</mat-card-subtitle>
@@ -122,7 +124,7 @@
         </mat-card-actions>
       </mat-card>
     </mat-grid-tile>
-    <mat-grid-tile class="bottomSection" [colspan]="1" [rowspan]="1">
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
       Tags and Nav
     </mat-grid-tile>
   </mat-grid-list>

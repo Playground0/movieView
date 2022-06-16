@@ -8,7 +8,7 @@
 }
 button{
     margin: 5% 2% 5% 2%;
-    margin-top: 0;
+    /* margin-top: 0; */
 }
 .example-card{
     border-radius: 15px;
@@ -22,16 +22,12 @@ button{
     width: 80%;
 }
 
-.topSection
+#topSection
 {
     width: 100%;
     margin-bottom: 2%;
     /* border: 1px solid red; */
  
-}
-.controls{
-    margin: 0;
-    padding: 8%;
 }
 
 
@@ -93,13 +89,43 @@ button{
     justify-content: center;
     align-items: center;
 }
+#controls{
+    margin: 0;
+    /* border: 1px solid black; */
+    /* margin-bottom: 50%; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #navigator
 {
+    position: absolute;
     display:flex;
-    width: 40%;
-    margin-left: 25%;
-    margin-bottom: 10%;
+    padding: 5%;
+    margin-top: 0;
+    margin-bottom: 55%;
 }
 
-  
+#topicNavigator
+{
+    /* border: 1px solid red; */
+    /* position: absolute; */
+    /* width: auto;  */
+    display: flex;  
+    margin-top: 20%;
+    height: 50%;
+} 
+#topicNavigatorCard
+{
+    /* display: flex;
+    height: 50%;
+    width: 100%; */
+
+}
+.btnNaviagte{
+    /* padding: 1%; */
+    background-color: #E7EAEF;
+    color: black;
+}

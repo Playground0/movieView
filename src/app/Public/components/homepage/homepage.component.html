@@ -1,5 +1,5 @@
 <section id="homeBody">
-  <mat-grid-list cols="3" rowHeight="300px" class="topSection" >
+  <mat-grid-list cols="3" rowHeight="300px" id="topSection" >
     <mat-grid-tile class="" [colspan]="2" [rowspan]="1">
       <mat-card id="trending-card" class="example-card">
         <mat-card-title-group>
@@ -50,7 +50,9 @@
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
+
   <mat-divider [inset]="true"></mat-divider>
+  
   <mat-grid-list cols="4" rowHeight="300px"  id="bottomSection">
     <mat-grid-tile [colspan]="1" [rowspan]="2">
       <mat-card id="recentPost" class="ed"xample-car>
@@ -131,25 +133,20 @@
         </mat-grid-tile-footer>
       </mat-card>
     </mat-grid-tile>
-    <mat-grid-tile [colspan]="1" [rowspan]="1">
-      <div class="controls">
-        <mat-card id="navigator" class="example-card">
-          <button id="btn1" mat-fab color="primary">
+    <mat-grid-tile id="controls" [colspan]="1" [rowspan]="1">
+      <div id="navigator">
+          <button id="btn1" class="btn" mat-fab color="primary">
             <mat-icon>navigate_before</mat-icon>
           </button>
-          <button id="btn2" mat-fab color="primary">
+          <button id="btn2" class="btn"mat-fab color="primary">
             <mat-icon>navigate_next</mat-icon>
           </button>
-        </mat-card>
-        <mat-card id="topicNavigator" class="example-class">
-          <mat-chip-list aria-label="Fish selection">
-            <mat-chip>One fish</mat-chip>
-            <mat-chip>Two fish</mat-chip>
-            <mat-chip color="primary" selected>Primary fish</mat-chip>
-            <mat-chip color="accent" selected>Accent fish</mat-chip>
-          </mat-chip-list>
-        </mat-card>
       </div>
+        <div id="topicNavigator">
+            <div id="topicNavigatorCard" *ngFor="let list of navigateList">
+              <button mat-raised-button color="primary" class="btnNaviagte">{{list}}</button>
+            </div>
+        </div>
     </mat-grid-tile>
   </mat-grid-list>
 </section>

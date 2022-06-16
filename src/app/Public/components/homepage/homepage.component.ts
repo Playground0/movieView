@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
+  navigateList = ['About Us','Contact us','Be a Founder'];
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

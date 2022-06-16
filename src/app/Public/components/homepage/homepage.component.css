@@ -29,6 +29,12 @@ button{
     /* border: 1px solid red; */
  
 }
+.controls{
+    margin: 0;
+    padding: 8%;
+}
+
+
 #trending-card {
     height: 80%;
     padding: 3% 2% 2% 2%;
@@ -87,10 +93,7 @@ button{
     justify-content: center;
     align-items: center;
 }
-.controls{
-    margin: 0;
-    padding: 8%;
-}
+
 #navigator
 {
     display:flex;

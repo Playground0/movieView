@@ -1,7 +1,7 @@
 <section id="homeBody">
   <mat-grid-list cols="3" rowHeight="300px" class="topSection" >
-    <mat-grid-tile [colspan]="2" [rowspan]="1">
-      <mat-card class="trending-card example-card">
+    <mat-grid-tile class="" [colspan]="2" [rowspan]="1">
+      <mat-card id="trending-card" class="example-card">
         <mat-card-title-group>
           <img id="card-image" mat-card-xl-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
         </mat-card-title-group>
@@ -12,16 +12,17 @@
             Explicabo, culpa magni, consequatur eius vero quae inventore, ad exercitationem laboriosam molestiae iure
             aperiam aut praesentium id.
             Eligendi quo pariatur incidunt minus.
+            <mat-divider [inset]="true"></mat-divider> <br>
             <mat-card-subtitle>
-              <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+              <img mat-card-avatar src="https://material.angular.io/assets/img/examples/shiba2.jpg">
               <p>Alexander Pakinson</p>
             </mat-card-subtitle>
           </div>
         </mat-card-content>
       </mat-card>
     </mat-grid-tile>
-    <mat-grid-tile [colspan]="1" [rowspan]="1">
-      <mat-card class="categoryCard example-card">
+    <mat-grid-tile  [colspan]="1" [rowspan]="1">
+      <mat-card id="categoryCard" class="example-card">
         <mat-card-content class="content">
           <div>
             <button mat-raised-button><mat-icon> cloud </mat-icon>
@@ -49,11 +50,11 @@
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
-
-  <mat-grid-list cols="4" rowHeight="300px"  class="bottomSection">
+  <mat-divider [inset]="true"></mat-divider>
+  <mat-grid-list cols="4" rowHeight="300px"  id="bottomSection">
     <mat-grid-tile [colspan]="1" [rowspan]="2">
-      <mat-card class="example-card">
-        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+      <mat-card id="recentPost" class="ed"xample-car>
+        <img mat-card-xl-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
         <mat-card-content>
           <p>
             The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
@@ -68,7 +69,7 @@
       </mat-card>
     </mat-grid-tile>
     <mat-grid-tile [colspan]="2" [rowspan]="1">
-      <mat-card class="example-card">
+      <mat-card id="searchBox" class="example-card">
         <mat-card-title-group>
           <mat-card-title>
             <mat-form-field class="example-full-width" appearance="fill">
@@ -91,41 +92,64 @@
       </mat-card>
     </mat-grid-tile>
     <mat-grid-tile [colspan]="1" [rowspan]="1">
-        <mat-card class="example-card">
+        <mat-card id="latestMovie" class="example-card">
             <mat-card-title-group>
               <img id="card-image" mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
             </mat-card-title-group>
             <mat-card-content>
               <div class="card-content">
-                <mat-card-title id="card-title">Shiba Inu</mat-card-title>
-                <mat-card-subtitle id="card-title">Extra large</mat-card-subtitle>
+                <mat-card-title id="card-title">An Insiring Short Film</mat-card-title>
+                <mat-card-subtitle id="card-title">
+                  <mat-icon style="font-size: 16px;">visibility</mat-icon> 
+                  <span style="font-size: 21px;">80,989</span>
+                </mat-card-subtitle>
               </div>
             </mat-card-content>
           </mat-card>
     </mat-grid-tile>
     <mat-grid-tile [colspan]="2" [rowspan]="1">
-      <mat-card class="userCard example-card">
-        <mat-card-title-group>
-          <img id="card-image" mat-card-md-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
-        </mat-card-title-group>
+      <mat-card id="userCard" class="example-card">
+          <img mat-card-xl-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
         <mat-card-content class="card-content">
           <div>
-            <mat-card-title id="card-title">Shiba Inu</mat-card-title>
-            <mat-card-subtitle id="card-title">Extra large</mat-card-subtitle>
+            <mat-card-title id="card-title">John Doe</mat-card-title>
+            <mat-card-subtitle id="card-title">Senior Journalist</mat-card-subtitle>
+          </div>
+          <div>
+             <ul>
+              <li>Articles</li>
+             </ul>
           </div>
         </mat-card-content>
-        <mat-card-actions>
-          <button mat-raised-button>
-            View Profile
-          </button>
-          <button mat-raised-button color="primary">
-            Logout
-          </button>
-        </mat-card-actions>
+        <mat-grid-tile-footer>
+            <button mat-raised-button>
+              View Profile
+            </button>
+            <button mat-raised-button color="primary">
+              Logout
+            </button>
+        </mat-grid-tile-footer>
       </mat-card>
     </mat-grid-tile>
     <mat-grid-tile [colspan]="1" [rowspan]="1">
-      Tags and Nav
+      <div class="controls">
+        <mat-card id="navigator" class="example-card">
+          <button id="btn1" mat-fab color="primary">
+            <mat-icon>navigate_before</mat-icon>
+          </button>
+          <button id="btn2" mat-fab color="primary">
+            <mat-icon>navigate_next</mat-icon>
+          </button>
+        </mat-card>
+        <mat-card id="topicNavigator" class="example-class">
+          <mat-chip-list aria-label="Fish selection">
+            <mat-chip>One fish</mat-chip>
+            <mat-chip>Two fish</mat-chip>
+            <mat-chip color="primary" selected>Primary fish</mat-chip>
+            <mat-chip color="accent" selected>Accent fish</mat-chip>
+          </mat-chip-list>
+        </mat-card>
+      </div>
     </mat-grid-tile>
   </mat-grid-list>
 </section>
